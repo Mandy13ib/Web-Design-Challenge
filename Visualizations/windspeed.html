@@ -4,23 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Web-Visualization by Mandy Farrell</title>
-  <link rel="stylesheet" href=""
-    integrity="" crossorigin="anonymous">
-
-  <script src=""
-    integrity=""
-    crossorigin="anonymous"></script>
-  <script src=""
-    integrity=""
-    crossorigin="anonymous"></script>
-  <script src=""
-    integrity=""
-    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="styles.css">
 </head>
 <!-- Content - Padding - Border - Margin -->
-
 <body>
   <!-- Header -->
   <div>
@@ -29,8 +20,6 @@
         <a href="">Lattitude</a>
       </div>
       <div class="col col-6 menubuttons divtop">
-
-
         <nav class="">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
             aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,25 +34,22 @@
                   Plots
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="visualization-1.html">Max Temperature</a>
-                  <a class="dropdown-item" href="visualization-2.html">Humidity</a>
-                  <a class="dropdown-item" href="visualization-3.html">Cloudiness</a>
-                  <a class="dropdown-item" href="visualization-4.html">Wind Speed</a>
+                  <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="cloudiness">Cloudiness</a>
+                  <a class="dropdown-item" href="windspeed">Wind Speed</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Comparison</a>
+                <a class="nav-link" href="comparison.html">Comparison</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Data</a>
+                <a class="nav-link" href="data.html">Data</a>
               </li>
             </ul>
           </div>
         </nav>
-
-
       </div>
-    </div>
   </div>
   <!-- Main body -->
   <div class="container">
@@ -74,10 +60,10 @@
         <br>
         <h1>Max Temperature</h1>
         <hr>
-        <a href="visualization-1.html"><img src="" alt="Latitude vs. Temperature"></a>
+        <a href="temperature.html"><img src="" alt="Latitude vs. Temperature"></a>
 
         <p>
-        As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends ot be warmer this time of year than the nothern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.
+        Add info here 
         </p>
         <hr>
       </div>
@@ -89,16 +75,16 @@
         <hr>
         <div class='row'>
           <div class="col col-3 col-md-6">
-            <a href="visualization-1.html"><img src="" alt="Latitude vs. Temperature" id="imgsel"></a>
+            <a href="temperature.html"><img src="..assets/Fig1.png" alt="Latitude vs. Temperature" id="imgsel"></a>
           </div>
           <div class="col col-3 col-md-6">
-            <a href="visualization-2.html"><img src="" alt="Latitude vs. Humidity"></a>
+            <a href="humidity.html"><img src="..assets/Fig1.png" alt="Latitude vs. Humidity"></a>
           </div>
           <div class="col col-3 col-md-6">
-            <a href="visualization-3.html"><img src="" alt="Latitude vs. Cloudiness"></a>
+            <a href="cloudiness"><img src="..assets/Fig1.png" alt="Latitude vs. Cloudiness"></a>
           </div>
           <div class="col col-3 col-md-6">
-            <a href="visualization-4.html"><img src="" alt="Latitude vs. Wind Speed"></a>
+            <a href="windspeed"><img src="..assets/Fig1.png" alt="Latitude vs. Wind Speed"></a>
           </div>
         </div>
       </div>
