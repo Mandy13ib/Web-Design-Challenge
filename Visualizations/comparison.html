@@ -4,27 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <title>Web-Visualization by Mandy Farrell</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="styles.css">
 </head>
-<!-- content - Padding - Border - Margin -->
+<!-- Setting up the Content, Padding, Border and the Margin -->
 
 <body>
-  <!-- start of header -->
+  <!-- Start of the header -->
   <div>
     <div class="row">
-
       </div>
       <div class="col col-6 menubuttons divtop">
+
+<!-- Setting up drop down menu for the plot, comparison and data -->
         <nav class="navbar navbar-expand-md navbar-light">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
             aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+<!-- adding drop down for the plot, camparison, data and repo-->
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
@@ -33,8 +35,8 @@
                   Plots
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="temperature.html">Temperature</a>
-                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="temperature">Temperature</a>
+                  <a class="dropdown-item" href="humidity">Humidity</a>
                   <a class="dropdown-item" href="cloudiness">Cloudiness</a>
                   <a class="dropdown-item" href="windspeed">Wind Speed</a>
                 </div>
@@ -45,52 +47,52 @@
               <li class="nav-item">
                 <a class="nav-link" href="data.html">Data</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://github.com/Mandy13ib/Web-Design-Challenge.git">REPO</a>
-            </li>
             </ul>
           </div>
         </nav>
+
+
       </div>
     </div>
   </div>
-  <!-- start of main body -->
+  <!-- start of the main body -->
   <div class="container">
     <br>
     <div class="row">
-      <!-- rigth side -->
+      <!-- setting up the rigth side -->
       <div class="col col-12 divbdy">
         <br>
         <h1>Comparison: Latitude vs X</h1>
         <hr>
-        <p>Click any plot to get the analysis</p>
+        <p>Click any plot to get an in-depth analysis</p>
+        <!-- setting up the images with link-->
         <div class='row'>
           <div class="col col-12 col-md-6">
-              <h3>vs. Max Temperature</h3>
-            <a href="visualization-1.html"><img src="images/Fig1.png" alt="Latitude vs. Temperature"></a>
+              <h3>vs. Temperature</h3>
+            <a href="temperature"><img src="..assets/Fig1.png" alt="Latitude vs. Temperature"></a>
           </div>
           <div class="col col-12 col-md-6">
               <h3>vs. Humidity</h3>
-            <a href="humidity.html"><img src="images/Fig2.png" alt="Latitude vs. Humidity"></a>
+            <a href="humidity"><img src="..assets/Fig2.png" alt="Latitude vs. Humidity"></a>
           </div>
           <div class="col col-12 col-md-6">
               <h3>vs. Cloudiness</h3>
-            <a href="cloudiness"><img src="images/Fig3.png" alt="Latitude vs. Cloudiness"></a>
+            <a href="cloudiness"><img src="..assets/Fig3.png" alt="Latitude vs. Cloudiness"></a>
           </div>
           <div class="col col-12 col-md-6">
               <h3>vs. Wind Speed</h3>
-            <a href="windspeed"><img src="images/Fig4.png" alt="Latitude vs. Wind Speed"></a>
+            <a href="windspeed"><img src="..assets/Fig4.png" alt="Latitude vs. Wind Speed"></a>
           </div>
         </div>
       </div>
-      <!-- end of rigth side -->
+      <!-- end of the rigth side -->
     </div>
   </div>
-  <!-- start of footer -->
+  <!-- start of the footer with copyright info -->
   <br>
   <div>
     <div class="row">
-      <div class="col col-12 divbtm">© Coppyright Daewon Kwon 2019</div>
+      <div class="col col-12 divbtm">© Copyright Mandy Farrell 2021</div>
     </div>
   </div>
 </body>
