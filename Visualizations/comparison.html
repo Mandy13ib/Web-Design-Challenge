@@ -3,30 +3,30 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Web-Visualization by Mandy Farrell</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Setting up the bootstraps -->
+  <title>Comparison Visualization</title><!-- title for the tab -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Setting up the bootstraps -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-  <link rel="stylesheet" href="styles.css">
+  <!-- Setting up the link to the css file -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<!-- Setting up the Content, Padding, Border and the Margin -->
-
+<title>Weather Dashboard Comparison By Mandy Farrell</title>
+</head>
+<!-- setting up the Content, Padding, Border and the Margin  -->
 <body>
-  <!-- Start of the header -->
-  <div>
-    <div class="row">
-      </div>
-      <div class="col col-6 menubuttons divtop">
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand"style="background-color: rgb(232, 233, 241);" href="index.html">LATITUDE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<!-- Setting up drop down menu for the plot, comparison and data -->
-        <nav class="navbar navbar-expand-md navbar-light">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-<!-- adding drop down for the plot, camparison, data and repo-->
+<!-- adding drop down for the plot -->
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
@@ -35,10 +35,10 @@
                   Plots
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="temperature">Temperature</a>
-                  <a class="dropdown-item" href="humidity">Humidity</a>
-                  <a class="dropdown-item" href="cloudiness">Cloudiness</a>
-                  <a class="dropdown-item" href="windspeed">Wind Speed</a>
+                  <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
                 </div>
               </li>
               <li class="nav-item">
@@ -50,15 +50,14 @@
             </ul>
           </div>
         </nav>
-
-
       </div>
     </div>
   </div>
   <!-- start of the main body -->
   <div class="container">
-    <br>
     <div class="row">
+        <div class="col-md-1 col-md-12">
+            <div class="box" style="padding-bottom: 15px;">
       <!-- setting up the rigth side -->
       <div class="col col-12 divbdy">
         <br>
@@ -69,32 +68,26 @@
         <div class='row'>
           <div class="col col-12 col-md-6">
               <h3>vs. Temperature</h3>
-            <a href="temperature"><img src="..assets/Fig1.png" alt="Latitude vs. Temperature"></a>
+            <a href="temperature.html"><img src="../assets/Fig1.png" alt="Latitude vs. Temperature:"width="320" align="left""></a>
           </div>
           <div class="col col-12 col-md-6">
               <h3>vs. Humidity</h3>
-            <a href="humidity"><img src="..assets/Fig2.png" alt="Latitude vs. Humidity"></a>
+            <a href="humidity.html"><img src="../assets/Fig2.png" alt="Latitude vs. Humidity:"width="320" align="left""></a>
           </div>
           <div class="col col-12 col-md-6">
               <h3>vs. Cloudiness</h3>
-            <a href="cloudiness"><img src="..assets/Fig3.png" alt="Latitude vs. Cloudiness"></a>
+            <a href="cloudiness.html"><img src="../assets/Fig3.png" alt="Latitude vs. Cloudiness:"width="320" align="left""></a>
           </div>
           <div class="col col-12 col-md-6">
               <h3>vs. Wind Speed</h3>
-            <a href="windspeed"><img src="..assets/Fig4.png" alt="Latitude vs. Wind Speed"></a>
+            <a href="windspeed.html"><img src="../assets/Fig4.png" alt="Latitude vs. Wind Speed:"width="320" align="left""></a>
           </div>
         </div>
       </div>
       <!-- end of the rigth side -->
     </div>
-  </div>
-  <!-- start of the footer with copyright info -->
   <br>
-  <div>
-    <div class="row">
-      <div class="col col-12 divbtm">© Copyright Mandy Farrell 2021</div>
-    </div>
-  </div>
+  <div><!-- start of the footer with copyright info -->
+  <footer> Web Design Challenge © Coppyright Mandy Farrell 2021</footer>
 </body>
-
 </html>

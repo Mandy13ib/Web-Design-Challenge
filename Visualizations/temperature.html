@@ -1,103 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Web-Visualization by Mandy Farrell</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <link rel="cities" href="cities.css">
+    <meta charset="utf-8">
+    <!-- Setting up the title -->
+    <title>Web-Max Temperature Visualization by Mandy Farrell</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Setting up the bootstraps -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+    <!-- Setting up the link to the css file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Setting up the title -->
+    <title>Temperature Visualization</title><!-- title for the tab -->
 </head>
 <!-- setting up the Content, Padding, Border and the Margin  -->
-
 <body>
-  <!-- Set up the Header -->
-  <div>
-    <div class="row">
-<!-- Setting up drop down menu for the plot, comparison and data -->
-      </div>
-      <div class="col col-6 menubuttons divtop">
-        <nav class="navbar navbar-expand-md navbar-light">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-<!-- adding drop down for the plot, camparison, data and repo-->
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  Plots
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="temperature.html">Temperature</a>
-                  <a class="dropdown-item" href="visualization2.html">Humidity</a>
-                  <a class="dropdown-item" href="cloudiness">Cloudiness</a>
-                  <a class="dropdown-item" href="windspeed">Wind Speed</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="comparison.html">Comparison</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="data.html">Data</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://github.com/Mandy13ib/Web-Design-Challenge.git">REPO</a>
-            </li>
-            </ul>
-          </div>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand"style="background-color: rgb(232, 233, 241);" href="index.html">LATITUDE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PLOTS
+                        </a> <!-- Setting up drop down menu for the plot-->
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="temperature.html">Max Temperature vs Latitude</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity vs Latitude</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness vs Latitude</a>
+                            <a class="dropdown-item" href="windspeed.html">Wind Speed vs Latitude</a>
+                        </div>
+                    </li> <!-- Setting up comparison link -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison.html">COMPARISON</a>
+                    </li>
+                    <li class="nav-item"> <!-- Setting up data link -->
+                        <a class="nav-link" href="data.html">DATA</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-      </div>
-    </div>
-  </div>
-  <!-- Start for the main body -->
-  <div class="container">
-    <br>
-    <div class="row">
-      <!-- set up the left side of site -->
-      <div class="col col-12 col-md-8 divbdy">
-        <br>
-        <h1>Temperature</h1>
-        <hr>
-        <a href="temperature.html"><img src="https://github.com/Mandy13ib/Web-Design-Challenge.git" alt="Latitude vs. Temperature"></a>
-
-        <p>
-        Add info here.
-        </p>
-        <hr>
-      </div>
-      <!-- End the left side of the site-->
-      <!-- rigth side of the site -->
-      <div class="col col-12 col-md-4 divbdy">
-        <br>
-        <h2>Visualizations</h2>
-        <hr>
-        <div class='row'>
-          <div class="col col-3 col-md-6">
-            <a href="temperature.html"><img src="..assets/Fig1.png" alt="Latitude vs. Temperature" id="imgsel"></a>
-          </div>
-          <div class="col col-3 col-md-6">
-            <a href="visualization2.html"><img src="..assets/Fig2.png" alt="Latitude vs. Humidity"></a>
-          </div>
-          <div class="col col-3 col-md-6">
-            <a href="cloudiness"><img src="..assets/Fig3.png" alt="Latitude vs. Cloudiness"></a>
-          </div>
-          <div class="col col-3 col-md-6">
-            <a href="windspeed"><img src="..assets/Fig4.png" alt="Latitude vs. Wind Speed"></a>
-          </div>
+    </div> <!-- left side of the site with image and summary -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 col-md-6">
+                <div class="box" style="padding-bottom: 8px;">
+                    <h2 class="title">SUMMARY: Max Temperature</h2>
+                    <hr> <!-- adding image and summary -->
+                    <img src="../assets/Fig1.png" class="vizualization rounded float-right" alt="Temperature Graph:"width="75" align="left"">
+                    The chart represents max temperature in Farenheit on the y-axis with the latitude on the x-axis.
+                    Positive values on the x-axis represent the Northern Hemisphere, negative values represents the
+                    Southern Hemisphere, and zero represents the Equator. This polt shows the realationships between
+                    temperature and proximty to the equator. As we move closer to zero or the Equator on the x-axis
+                    we see an increase in temperature.
+                </div>
+            </div> <!-- visualizations with images and links -->
+            <div class="col-md-4 col-md-6">
+                <div class="box">
+                    <h2 class="title">VISUALIZATIONS</h2>
+                    <hr>
+                    <div class="container">
+                        <div class="row" style="padding-bottom: 70px;">
+                            <div class="col-6">
+                              <!-- temperature image and link -->
+                                <div class="title">Latitude vs Max Temp</div>
+                                <a href="temperature.html">
+                                <img class="panel" src="../assets/Fig1.png" alt="Temperature Graph:"width="250" align="left"">
+                                </a>
+                            </div>
+                            <div class="col-6">
+                              <!-- humidity image and link -->
+                                <div class="title">Latitude vs Humidity</div>
+                                <a href="humidity.html">
+                                <img class="panel" src="../assets/Fig2.png" alt="Humidity Graph:"width="250" align="left"">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row"style="padding-bottom: 70px;" >
+                            <div class="col-6">
+                              <!-- cloudiness image and link -->
+                                <div class="title">Latitude vs Cloudiness</div>
+                                <a href="cloudiness.html">
+                                <img class="panel" src="../assets/Fig3.png" alt="Cloudiness Graph:"width="250" align="left"">
+                                </a>
+                                <!-- windspeed image and link -->
+                            </div>
+                            <div class="col-6">
+                                <div class="title">Latitude vs Wind Speed</div>
+                                <a href="windspeed.html">
+                                    <img class="panel" src="../assets/Fig4.png" alt="Wind Speed Graph:"width="250" align="left"">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- End of rigth side of the site -->
     </div>
-  </div>
-  <!-- Set up the Footer with copywrite info -->
-  <br>
-  <div>
-    <div class="row">
-      <div class="col col-12 divbtm">© Coppyright Mandy Farrell 2021</div>
-    </div>
+    <footer> Web Design Challenge © Coppyright Mandy Farrell 2021</footer>
 </body>
+</html>
