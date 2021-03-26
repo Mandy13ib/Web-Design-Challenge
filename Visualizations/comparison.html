@@ -11,11 +11,12 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
   <!-- Setting up the link to the css file -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<title>Comparison By Mandy Farrell</title>
+<title>Comparison </title>
 </head>
 <!-- setting up the Content, Padding, Border and the Margin  -->
 <body>
@@ -24,21 +25,22 @@
             <a class="navbar-brand"style="background-color: rgb(232, 233, 241);" href="index.html">INDEX</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
+                <h6 class="text-center">Navigation Tabs</h6>
             </button>
 <!-- adding drop down for the plot -->
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Plots
-                </a>
+                </a><!-- Setting up drop down menu for the plot-->
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="temperature.html">Max Temperature</a>
                   <a class="dropdown-item" href="humidity.html">Humidity</a>
                   <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
                   <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
                 </div>
-              </li>
+              </li><!-- Setting up comparison link -->
               <li class="nav-item">
                 <a class="nav-link" href="comparison.html">Comparison</a>
               </li>
@@ -52,16 +54,16 @@
     </div>
   </div>
   <!-- start of the main body -->
-  <div class="container">
+  <div id="body" class="container"><!-- add id to fix error with nav bar -->
     <div class="row">
         <div class="col-md-1 col-md-12">
-            <div class="box" style="padding-bottom: 15px;">
+            <div class="box" style="padding-bottom: 8px;">
       <!-- setting up the rigth side -->
       <div class="col col-12 divbdy">
         <br>
         <h1>Comparison: Latitude vs </h1>
         <hr>
-        <p>Click any plot to get an in-depth analysis</p>
+        <p>Click any plot to get an in-depth analysis on the catogory that is displayed with that plot</p>
         <!-- setting up the images with link-->
         <div class='row'>
           <div class="col col-12 col-md-6">

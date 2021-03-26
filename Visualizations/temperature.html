@@ -24,7 +24,9 @@
             <a class="navbar-brand"style="background-color: rgb(232, 233, 241);" href="index.html">INDEX</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
+                <h6 class="text-center">Navigation Tabs</h6>
             </button>
+            <!-- adding drop down for the plot -->
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
@@ -47,18 +49,19 @@
                 </ul>
             </div>
         </nav>
+  </div>
     </div> <!-- left side of the site with image and summary -->
-    <div class="container">
+    <div id="body" class="container"><!-- add id to fix error with nav bar -->
         <div class="row">
             <div class="col-md-1 col-md-6">
                 <div class="box" style="padding-bottom: 8px;">
                     <h2 class="title">SUMMARY: Max Temperature</h2>
                     <hr> <!-- adding image and summary -->
                     <img src="../assets/Fig1.png" class="vizualization rounded float-right" alt="Temperature Graph:"width="75" align="left"">
-                    The chart represents max temperature in Farenheit on the y-axis with the latitude on the x-axis.
-                    Positive values on the x-axis represent the Northern Hemisphere, negative values represents the
-                    Southern Hemisphere, and zero represents the Equator. This polt shows the realationships between
-                    temperature and proximty to the equator. As we move closer to zero or the Equator on the x-axis
+                    The chart represents max temperature in Farenheit on the y-axis and show the latitude on the x-axis.
+                    The positive values on the x-axis represent the Northern Hemisphere, the negative values represents the
+                    Southern Hemisphere, and zero vaule represents the Equator. The polt shows the realationships between
+                    temperature and the proximty to the equator. As we move closer to zero which is the Equator on the x-axis,
                     we see an increase in temperature.
                 </div>
             </div> <!-- visualizations with images and links -->

@@ -8,8 +8,8 @@ body {
     max-height: 55px;
   }
   .navigation .navbar-brand {
-    color: rgb(99, 150, 88);
-    margin-left: auto;
+    color: rgb(68, 11, 90);
+    margin-right: auto;
     padding: inherit;
     font-weight: bold;
     background-color: rgb(99, 150, 88);
@@ -33,6 +33,14 @@ body {
    }
   .navbar-brand:hover {
   color: #98c29f;
+  }
+  .navigation .navbar {
+    margin-left: auto;
+    max-width: 100%;
+    min-width: 100px;
+  }
+  .navigation .navbar-brand {
+    white-space: nowrap;
   }
   a {
     color: #FFFFFF;
@@ -85,3 +93,6 @@ body {
   width: 100%;
   padding-top: 13px;
   }
+
+  #body{
+    margin-top: 150px;}
